@@ -5,6 +5,7 @@
 }
 
 html {
+  overflow-x: hidden;
   font-size: 10px;
 }
 
@@ -53,4 +54,30 @@ p {
 
 .time {
   color: #68777e;
+}
+
+/*Race Track Section*/
+#raceArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.race {
+  max-width: 500px;
+}
+
+.race-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.race h3 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.race-image object {
+  display: block;
+  width: 150px;
 }

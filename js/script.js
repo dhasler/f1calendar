@@ -20,12 +20,24 @@ function raceSetup(arr) {
   var out = "";
   var i;
   for (i = 0; i < racesData.length; i++) {
+    var fp1Time = new Date(racesData[i].fp1);
+    console.log(fp1Time);
     out +=
-      '<div class="race"><div class="race-image"><img src="./assets/tracks/circuit-' +
-      racesData[i].round.replace(" ", "_") +
-      '.svg" /></div><a href="#">' +
+      '<div class="race"><h3>' +
       racesData[i].round +
-      "</a><br></div>";
+      '</h3><div class="race-content">' +
+      '<div class="race-image">' +
+      '<object type="image/svg+xml" data="./assets/tracks/circuit-' +
+      racesData[i].round.replace(" ", "_") +
+      '.svg"></object></div>' +
+      '<div class="race-times">' +
+      "<p>FP1:</p>" +
+      "<p>FP2:</p>" +
+      "<p>FP3:</p>" +
+      "<p>Q:</p>" +
+      "<p>R:</p>" +
+      "</div>" +
+      "</div></div>";
   }
   document.getElementById("raceArea").innerHTML = out;
 }
