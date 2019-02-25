@@ -159,3 +159,8 @@ p {
   justify-content: space-between;
   margin-top: 10px;
 }
+
+.timezone-holder {
+  margin-top: 25px;
+  font-size: 1.8rem;
+}

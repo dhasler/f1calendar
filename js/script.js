@@ -1,5 +1,6 @@
 var xmlhttp = new XMLHttpRequest();
 var url = "https://dhasler.github.io/f1calendar/assets/race-data.json";
+var f1CookieName = "f1TimeZone";
 loadJSON(raceSetup);
 
 function loadJSON(callback) {
@@ -15,17 +16,30 @@ function loadJSON(callback) {
 }
 var nextRace = null;
 var racePast = false;
+
 function raceSetup(arr) {
   var racesData = arr.raceData;
-  console.log(racesData);
   var out = "";
   var i;
+
+  var timeZone = getTimezone();
+
   for (i = 0; i < racesData.length; i++) {
-    var fp1Time = moment(new Date(racesData[i].fp1)).utcOffset(0);
-    var fp2Time = moment(new Date(racesData[i].fp2)).utcOffset(0);
-    var fp3Time = moment(new Date(racesData[i].fp3)).utcOffset(0);
-    var qualiTime = moment(new Date(racesData[i].qualifying)).utcOffset(0);
-    var raceTime = moment(new Date(racesData[i].race)).utcOffset(0);
+    var fp1Time = moment(
+      new Date(racesData[i].fp1 + " GMT+0000 (GMT)")
+    ).utcOffset(0);
+    var fp2Time = moment(
+      new Date(racesData[i].fp2 + " GMT+0000 (GMT)")
+    ).utcOffset(0);
+    var fp3Time = moment(
+      new Date(racesData[i].fp3 + " GMT+0000 (GMT)")
+    ).utcOffset(0);
+    var qualiTime = moment(
+      new Date(racesData[i].qualifying + " GMT+0000 (GMT)")
+    ).utcOffset(0);
+    var raceTime = moment(
+      new Date(racesData[i].race + " GMT+0000 (GMT)")
+    ).utcOffset(0);
 
     if (racePast) {
       nextRace = racesData[i];
@@ -58,6 +72,65 @@ function raceSetup(arr) {
   }
   document.getElementById("raceArea").innerHTML = out;
   setNextRace(nextRace);
+}
+
+function getTimezone() {
+  var timeZoneCookie = getCookie(f1CookieName);
+  var timeZoneValue;
+  console.log(timeZoneCookie);
+  if (timeZoneCookie == "") {
+    setCookie(f1CookieName, "GMT", 365);
+    timeZoneValue = "GMT";
+  } else {
+    timeZoneValue = getCookie(f1CookieName);
+  }
+
+  //Create and append select list
+  var tzholder = document.getElementById("current-tz");
+  var selectList = document.createElement("select");
+  var possTimeZones = moment.tz.names();
+  selectList.id = "mySelect";
+  tzholder.appendChild(selectList);
+  for (var i = 0; i < possTimeZones.length; i++) {
+    var option = document.createElement("option");
+    option.value = possTimeZones[i];
+    option.text = possTimeZones[i];
+    selectList.appendChild(option);
+  }
+  selectList.value = timeZoneValue;
+  selectList.addEventListener("change", restTimeZone);
+}
+
+function restTimeZone(e) {
+  var newtz = e.target.value;
+  setCookie(f1CookieName, newtz, 365);
+
+  console.log(newtz);
+}
+
+function setCookie(name, value, days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000); // ) removed
+    var expires = "; expires=" + date.toGMTString(); // + added
+  } else var expires = "";
+  document.cookie = name + "=" + value + expires + ";path=/"; // + and " added
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
 
 function createTime(timeUTC, event) {
