@@ -57,8 +57,13 @@ p {
 }
 
 /*Next Race Section*/
+#nextRace {
+  display: flex;
+}
 #nextRace h2 {
   font-size: 3.6rem;
+  margin-top: 50px;
+  margin-left: 15px;
 }
 
 /*Race Track Section*/
@@ -73,6 +78,41 @@ p {
   box-sizing: border-box;
   padding: 20px;
   width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.race.next-race h3 {
+  background: #121212;
+  padding: 3px 25px;
+  position: relative;
+}
+
+.race.next-race h3::after {
+  background: white;
+  content: "";
+  display: block;
+  height: calc(100% + 4px);
+  left: -2px;
+  position: absolute;
+  top: -2px;
+  width: calc(100% + 4px);
+  z-index: -2;
+}
+
+.race.next-race h3::before {
+  background: #121212;
+  content: "Next Race:";
+  display: block;
+  font-size: 1.2rem;
+  height: calc(100% + 15px);
+  left: 20px;
+  position: absolute;
+  top: -12px;
+  width: calc(100% - 40px);
+  z-index: -1;
 }
 
 .race-image {
@@ -98,6 +138,7 @@ p {
 .race h3 {
   text-align: center;
   font-size: 3.6rem;
+  display: block;
 }
 
 .race .event {

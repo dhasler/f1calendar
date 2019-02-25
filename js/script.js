@@ -27,8 +27,6 @@ function raceSetup(arr) {
     var qualiTime = moment(new Date(racesData[i].qualifying)).utcOffset(0);
     var raceTime = moment(new Date(racesData[i].race)).utcOffset(0);
 
-    console.log(raceTime - Date.now());
-
     if (racePast) {
       nextRace = racesData[i];
       racePast = false;
@@ -38,7 +36,9 @@ function raceSetup(arr) {
     }
 
     out +=
-      '<div class="race"><h3>' +
+      '<div id="' +
+      convertToId(racesData[i].round) +
+      '" class="race"><h3>' +
       racesData[i].round +
       '</h3><div class="race-content">' +
       '<div class="race-image">' +
@@ -56,8 +56,8 @@ function raceSetup(arr) {
   if (nextRace == null) {
     nextRace = racesData[0];
   }
-  console.log(nextRace);
   document.getElementById("raceArea").innerHTML = out;
+  setNextRace(nextRace);
 }
 
 function createTime(timeUTC, event) {
@@ -75,4 +75,15 @@ function createTime(timeUTC, event) {
     "</span>" +
     "</p>"
   );
+}
+
+function setNextRace(nextRaceData) {
+  var nextRaceElement = document.getElementById("next-race-data");
+  var raceItem = document.getElementById(convertToId(nextRaceData.round));
+  raceItem.classList.add("next-race");
+  //nextRaceElement.innerHTML = "<h2>" + nextRaceData.round + "</h2>";
+}
+
+function convertToId(raceName) {
+  return raceName.replace(" ", "").toLowerCase();
 }
