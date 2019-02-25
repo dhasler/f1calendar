@@ -56,6 +56,15 @@ p {
   color: #68777e;
 }
 
+/*Timezone select*/
+#tzSelect {
+  background: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
 /*Next Race Section*/
 #nextRace {
   display: flex;
