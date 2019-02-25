@@ -25,11 +25,21 @@ function raceSetup(arr) {
   var timeZone = getTimezone();
 
   for (i = 0; i < racesData.length; i++) {
-    var fp1Time = moment(new Date(racesData[i].fp1)).utcOffset(0);
-    var fp2Time = moment(new Date(racesData[i].fp2)).utcOffset(0);
-    var fp3Time = moment(new Date(racesData[i].fp3)).utcOffset(0);
-    var qualiTime = moment(new Date(racesData[i].qualifying)).utcOffset(0);
-    var raceTime = moment(new Date(racesData[i].race)).utcOffset(0);
+    var fp1Time = moment(
+      new Date(racesData[i].fp1 + " GMT+0000 (GMT)")
+    ).utcOffset(0);
+    var fp2Time = moment(
+      new Date(racesData[i].fp2 + " GMT+0000 (GMT)")
+    ).utcOffset(0);
+    var fp3Time = moment(
+      new Date(racesData[i].fp3 + " GMT+0000 (GMT)")
+    ).utcOffset(0);
+    var qualiTime = moment(
+      new Date(racesData[i].qualifying + " GMT+0000 (GMT)")
+    ).utcOffset(0);
+    var raceTime = moment(
+      new Date(racesData[i].race + " GMT+0000 (GMT)")
+    ).utcOffset(0);
 
     if (racePast) {
       nextRace = racesData[i];
