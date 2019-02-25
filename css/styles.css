@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "f1";
+  src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.ttf")
+    format("truetype"); /* Safari, Android, iOS */
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #121212;
+  font-family: f1;
+  color: white;
+}
+
+#siteWrapper {
+  max-width: 2560px;
+  position: relative;
+  padding: 0 50px;
+}
+
+#heading {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  width: 100%;
+}
+
+#f1Logo {
+  max-width: 350px;
+}
+
+#testingDates {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.event {
+  color: red;
+}
+
+.time {
+  color: #68777e;
+}
