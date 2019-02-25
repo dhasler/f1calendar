@@ -13,7 +13,8 @@ function loadJSON(callback) {
   };
   xobj.send(null);
 }
-
+var nextRace;
+var racePast = false;
 function raceSetup(arr) {
   var racesData = arr.raceData;
   console.log(racesData);
@@ -27,6 +28,14 @@ function raceSetup(arr) {
     var raceTime = moment(new Date(racesData[i].race)).utcOffset(0);
 
     console.log(raceTime - Date.now());
+
+    if (racePast) {
+      nextRace = racesData[i];
+      racePast = false;
+    }
+    if (raceTime - Date.now() < 0) {
+      racePast = true;
+    }
 
     out +=
       '<div class="race"><h3>' +
@@ -44,6 +53,7 @@ function raceSetup(arr) {
       createTime(raceTime, "R") +
       "</div></div></div>";
   }
+  console.log(nextRace);
   document.getElementById("raceArea").innerHTML = out;
 }
 
