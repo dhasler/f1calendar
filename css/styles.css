@@ -22,30 +22,30 @@ body {
 }
 
 #heading {
-  align-items: flex-end;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 20px;
   width: 100%;
+}
+.logo-title {
+  display: flex;
+  flex-direction: row;
 }
 
 #f1Logo {
   max-width: 350px;
 }
 
-#testingDates {
-  position: absolute;
-  top: 20px;
-  right: 50px;
-}
-
 h1 {
   font-size: 4.8rem;
+  flex-shrink: 0;
+  align-self: flex-end;
 }
 
 p {
   font-size: 1.4rem;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .event {
@@ -56,37 +56,65 @@ p {
   color: #68777e;
 }
 
+/*Next Race Section*/
+#nextRace h2 {
+  font-size: 3.6rem;
+}
+
 /*Race Track Section*/
 #raceArea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .race {
-  max-width: 500px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 33%;
+}
+
+.race-image {
+  align-self: center;
+  box-sizing: border-box;
+  padding: 15px;
+  padding-bottom: 5px;
+  min-width: 110px;
+  width: 130px;
+}
+.race-image object {
+  display: block;
+  max-width: 100%;
 }
 
 .race-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .race h3 {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
+}
+
+.race .event {
+  width: 45px;
+}
+
+.race .day {
+  width: 70px;
 }
 
 .race .time {
-  margin-left: 5px;
+  width: 50px;
 }
 
 .time-line {
   display: flex;
+  text-align: left;
   justify-content: space-between;
-}
-
-.race-image object {
-  display: block;
-  width: 150px;
+  margin-top: 10px;
 }

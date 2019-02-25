@@ -26,6 +26,8 @@ function raceSetup(arr) {
     var qualiTime = moment(new Date(racesData[i].qualifying)).utcOffset(0);
     var raceTime = moment(new Date(racesData[i].race)).utcOffset(0);
 
+    console.log(raceTime - Date.now());
+
     out +=
       '<div class="race"><h3>' +
       racesData[i].round +
