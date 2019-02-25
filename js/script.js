@@ -1,6 +1,6 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "./assets/race-data.json";
-loadJSON(myFunction);
+var url = "https://dhasler.github.io/f1calendar/assets/race-data.json";
+loadJSON(raceSetup);
 
 function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
@@ -14,13 +14,18 @@ function loadJSON(callback) {
   xobj.send(null);
 }
 
-function myFunction(arr) {
+function raceSetup(arr) {
   var racesData = arr.raceData;
   console.log(racesData);
   var out = "";
   var i;
   for (i = 0; i < racesData.length; i++) {
-    out += '<a href="#">' + racesData[i].raceName + "</a><br>";
+    out +=
+      '<div class="race"><div class="race-image"><img src="./assets/tracks/circuit-' +
+      racesData[i].round.replace(" ", "_") +
+      '.svg" /></div><a href="#">' +
+      racesData[i].round +
+      "</a><br></div>";
   }
   document.getElementById("raceArea").innerHTML = out;
 }
