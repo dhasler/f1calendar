@@ -24,6 +24,7 @@ body {
 #heading {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 20px;
   width: 100%;
@@ -34,10 +35,12 @@ body {
 }
 
 #f1Logo {
-  max-width: 350px;
+  width: 350px;
+  display: block;
 }
 
 h1 {
+  display: block;
   font-size: 4.8rem;
   flex-shrink: 0;
   align-self: flex-end;
