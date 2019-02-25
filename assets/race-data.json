@@ -2,171 +2,171 @@
   "raceData": [
     {
       "round": "Australia",
-      "fp1": "March 15, 2019 02:00:00",
-      "fp2": "March 15, 2019 06:00:00",
-      "fp3": "March 16, 2019 04:00:00",
-      "qualifying": "March 16, 2019 07:00:00",
-      "race": "March 17, 2019 06:10:00"
+      "fp1": "March 15, 2019 02:00:00Z",
+      "fp2": "March 15, 2019 06:00:00Z",
+      "fp3": "March 16, 2019 04:00:00Z",
+      "qualifying": "March 16, 2019 07:00:00Z",
+      "race": "March 17, 2019 06:10:00Z"
     },
     {
       "round": "Bahrain",
-      "fp1": "March 29, 2019 12:00:00",
-      "fp2": "March 29, 2019 16:00:00",
-      "fp3": "March 30, 2019 13:00:00",
-      "qualifying": "March 30, 2019 16:00:00",
-      "race": "March 31, 2019 17:10:00"
+      "fp1": "March 29, 2019 12:00:00Z",
+      "fp2": "March 29, 2019 16:00:00Z",
+      "fp3": "March 30, 2019 13:00:00Z",
+      "qualifying": "March 30, 2019 16:00:00Z",
+      "race": "March 31, 2019 17:10:00Z"
     },
     {
       "round": "China",
-      "fp1": "April 12, 2019 04:00:00",
-      "fp2": "April 12, 2019 08:00:00",
-      "fp3": "April 13, 2019 05:00:00",
-      "qualifying": "April 13, 2019 08:00:00",
-      "race": "April 14, 2019 08:10:00"
+      "fp1": "April 12, 2019 04:00:00Z",
+      "fp2": "April 12, 2019 08:00:00Z",
+      "fp3": "April 13, 2019 05:00:00Z",
+      "qualifying": "April 13, 2019 08:00:00Z",
+      "race": "April 14, 2019 08:10:00Z"
     },
     {
       "round": "Azerbaijan",
-      "fp1": "April 26, 2019 11:00:00",
-      "fp2": "April 26, 2019 15:00:00",
-      "fp3": "April 27, 2019 12:00:00",
-      "qualifying": "April 27, 2019 15:00:00",
-      "race": "April 28, 2019 14:10:00"
+      "fp1": "April 26, 2019 11:00:00Z",
+      "fp2": "April 26, 2019 15:00:00Z",
+      "fp3": "April 27, 2019 12:00:00Z",
+      "qualifying": "April 27, 2019 15:00:00Z",
+      "race": "April 28, 2019 14:10:00Z"
     },
     {
       "round": "Spain",
-      "fp1": "May 10, 2019 11:00:00",
-      "fp2": "May 10, 2019 15:00:00",
-      "fp3": "May 11, 2019 12:00:00",
-      "qualifying": "May 11, 2019 15:00:00",
-      "race": "May 12, 2019 15:10:00"
+      "fp1": "May 10, 2019 11:00:00Z",
+      "fp2": "May 10, 2019 15:00:00Z",
+      "fp3": "May 11, 2019 12:00:00Z",
+      "qualifying": "May 11, 2019 15:00:00Z",
+      "race": "May 12, 2019 15:10:00Z"
     },
     {
       "round": "Monaco",
-      "fp1": "May 23, 2019 11:00:00",
-      "fp2": "May 23, 2019 15:00:00",
-      "fp3": "May 25, 2019 12:00:00",
-      "qualifying": "May 25, 2019 15:00:00",
-      "race": "May 26, 2019 15:10:00"
+      "fp1": "May 23, 2019 11:00:00Z",
+      "fp2": "May 23, 2019 15:00:00Z",
+      "fp3": "May 25, 2019 12:00:00Z",
+      "qualifying": "May 25, 2019 15:00:00Z",
+      "race": "May 26, 2019 15:10:00Z"
     },
     {
       "round": "Canada",
-      "fp1": "June 7, 2019 16:00:00",
-      "fp2": "June 7, 2019 20:00:00",
-      "fp3": "June 8, 2019 17:00:00",
-      "qualifying": "June 8, 2019 20:00:00",
-      "race": "June 9, 2019 20:10:00"
+      "fp1": "June 7, 2019 16:00:00Z",
+      "fp2": "June 7, 2019 20:00:00Z",
+      "fp3": "June 8, 2019 17:00:00Z",
+      "qualifying": "June 8, 2019 20:00:00Z",
+      "race": "June 9, 2019 20:10:00Z"
     },
     {
       "round": "France",
-      "fp1": "June 21, 2019 11:00:00",
-      "fp2": "June 21, 2019 15:00:00",
-      "fp3": "June 22, 2019 12:00:00",
-      "qualifying": "June 22, 2019 15:00:00",
-      "race": "June 23, 2019 15:10:00"
+      "fp1": "June 21, 2019 11:00:00Z",
+      "fp2": "June 21, 2019 15:00:00Z",
+      "fp3": "June 22, 2019 12:00:00Z",
+      "qualifying": "June 22, 2019 15:00:00Z",
+      "race": "June 23, 2019 15:10:00Z"
     },
     {
       "round": "Austria",
-      "fp1": "June 28, 2019 11:00:00",
-      "fp2": "June 28, 2019 15:00:00",
-      "fp3": "June 29, 2019 12:00:00",
-      "qualifying": "June 29, 2019 15:00:00",
-      "race": "June 30, 2019 15:10:00"
+      "fp1": "June 28, 2019 11:00:00Z",
+      "fp2": "June 28, 2019 15:00:00Z",
+      "fp3": "June 29, 2019 12:00:00Z",
+      "qualifying": "June 29, 2019 15:00:00Z",
+      "race": "June 30, 2019 15:10:00Z"
     },
     {
       "round": "Great Britain",
-      "fp1": "July 12, 2019 11:00:00",
-      "fp2": "July 12, 2019 15:00:00",
-      "fp3": "July 13, 2019 12:00:00",
-      "qualifying": "July 13, 2019 15:00:00",
-      "race": "July 14, 2019 15:10:00"
+      "fp1": "July 12, 2019 11:00:00Z",
+      "fp2": "July 12, 2019 15:00:00Z",
+      "fp3": "July 13, 2019 12:00:00Z",
+      "qualifying": "July 13, 2019 15:00:00Z",
+      "race": "July 14, 2019 15:10:00Z"
     },
     {
       "round": "Germany",
-      "fp1": "July 26, 2019 11:00:00",
-      "fp2": "July 26, 2019 15:00:00",
-      "fp3": "July 27, 2019 12:00:00",
-      "qualifying": "July 27, 2019 15:00:00",
-      "race": "July 28, 2019 15:10:00"
+      "fp1": "July 26, 2019 11:00:00Z",
+      "fp2": "July 26, 2019 15:00:00Z",
+      "fp3": "July 27, 2019 12:00:00Z",
+      "qualifying": "July 27, 2019 15:00:00Z",
+      "race": "July 28, 2019 15:10:00Z"
     },
     {
       "round": "Hungary",
-      "fp1": "August 2, 2019 11:00:00",
-      "fp2": "August 2, 2019 15:00:00",
-      "fp3": "August 3, 2019 12:00:00",
-      "qualifying": "August 3, 2019 15:00:00",
-      "race": "August 4, 2019 15:10:00"
+      "fp1": "August 2, 2019 11:00:00Z",
+      "fp2": "August 2, 2019 15:00:00Z",
+      "fp3": "August 3, 2019 12:00:00Z",
+      "qualifying": "August 3, 2019 15:00:00Z",
+      "race": "August 4, 2019 15:10:00Z"
     },
     {
       "round": "Belgium",
-      "fp1": "August 30, 2019 11:00:00",
-      "fp2": "August 30, 2019 15:00:00",
-      "fp3": "August 31, 2019 12:00:00",
-      "qualifying": "August 31, 2019 15:00:00",
-      "race": "September 1, 2019 15:10:00"
+      "fp1": "August 30, 2019 11:00:00Z",
+      "fp2": "August 30, 2019 15:00:00Z",
+      "fp3": "August 31, 2019 12:00:00Z",
+      "qualifying": "August 31, 2019 15:00:00Z",
+      "race": "September 1, 2019 15:10:00Z"
     },
     {
       "round": "Italy",
-      "fp1": "September 6, 2019 11:00:00",
-      "fp2": "September 6, 2019 15:00:00",
-      "fp3": "September 7, 2019 12:00:00",
-      "qualifying": "September 7, 2019 15:00:00",
-      "race": "September 8, 2019 15:10:00"
+      "fp1": "September 6, 2019 11:00:00Z",
+      "fp2": "September 6, 2019 15:00:00Z",
+      "fp3": "September 7, 2019 12:00:00Z",
+      "qualifying": "September 7, 2019 15:00:00Z",
+      "race": "September 8, 2019 15:10:00Z"
     },
     {
       "round": "Singapore",
-      "fp1": "September 20, 2019 10:30:00",
-      "fp2": "September 20, 2019 14:30:00",
-      "fp3": "September 21, 2019 12:00:00",
-      "qualifying": "September 21, 2019 15:00:00",
-      "race": "September 22, 2019 14:10:00"
+      "fp1": "September 20, 2019 10:30:00Z",
+      "fp2": "September 20, 2019 14:30:00Z",
+      "fp3": "September 21, 2019 12:00:00Z",
+      "qualifying": "September 21, 2019 15:00:00Z",
+      "race": "September 22, 2019 14:10:00Z"
     },
     {
       "round": "Russia",
-      "fp1": "September 27, 2019 10:00:00",
-      "fp2": "September 27, 2019 14:00:00",
-      "fp3": "September 28, 2019 11:00:00",
-      "qualifying": "September 28, 2019 14:00:00",
-      "race": "September 29, 2019 13:10:00"
+      "fp1": "September 27, 2019 10:00:00Z",
+      "fp2": "September 27, 2019 14:00:00Z",
+      "fp3": "September 28, 2019 11:00:00Z",
+      "qualifying": "September 28, 2019 14:00:00Z",
+      "race": "September 29, 2019 13:10:00Z"
     },
     {
       "round": "Japan",
-      "fp1": "October 11, 2019 03:00:00",
-      "fp2": "October 11, 2019 07:00:00",
-      "fp3": "October 12, 2019 05:00:00",
-      "qualifying": "October 12, 2019 08:00:00",
-      "race": "October 13, 2019 07:10:00"
+      "fp1": "October 11, 2019 03:00:00Z",
+      "fp2": "October 11, 2019 07:00:00Z",
+      "fp3": "October 12, 2019 05:00:00Z",
+      "qualifying": "October 12, 2019 08:00:00Z",
+      "race": "October 13, 2019 07:10:00Z"
     },
     {
       "round": "Mexico",
-      "fp1": "October 25, 2019 17:00:00",
-      "fp2": "October 25, 2019 21:00:00",
-      "fp3": "October 26, 2019 17:00:00",
-      "qualifying": "October 26, 2019 20:00:00",
-      "race": "October 27, 2019 20:10:00"
+      "fp1": "October 25, 2019 17:00:00Z",
+      "fp2": "October 25, 2019 21:00:00Z",
+      "fp3": "October 26, 2019 17:00:00Z",
+      "qualifying": "October 26, 2019 20:00:00Z",
+      "race": "October 27, 2019 20:10:00Z"
     },
     {
       "round": "United States",
-      "fp1": "November 1, 2019 17:00:00",
-      "fp2": "November 1, 2019 21:00:00",
-      "fp3": "November 2, 2019 19:00:00",
-      "qualifying": "November 2, 2019 22:00:00",
-      "race": "November 3, 2019 20:10:00"
+      "fp1": "November 1, 2019 17:00:00Z",
+      "fp2": "November 1, 2019 21:00:00Z",
+      "fp3": "November 2, 2019 19:00:00Z",
+      "qualifying": "November 2, 2019 22:00:00Z",
+      "race": "November 3, 2019 20:10:00Z"
     },
     {
       "round": "Brazil",
-      "fp1": "November 15, 2019 14:00:00",
-      "fp2": "November 15, 2019 18:00:00",
-      "fp3": "November 16, 2019 15:00:00",
-      "qualifying": "November 16, 2019 18:00:00",
-      "race": "November 17, 2019 18:10:00"
+      "fp1": "November 15, 2019 14:00:00Z",
+      "fp2": "November 15, 2019 18:00:00Z",
+      "fp3": "November 16, 2019 15:00:00Z",
+      "qualifying": "November 16, 2019 18:00:00Z",
+      "race": "November 17, 2019 18:10:00Z"
     },
     {
       "round": "Abu Dhabi",
-      "fp1": "November 29, 2019 10:00:00",
-      "fp2": "November 29, 2019 14:00:00",
-      "fp3": "November 30, 2019 11:00:00",
-      "qualifying": "November 30, 2019 14:00:00",
-      "race": "December 1, 2019 14:10:00"
+      "fp1": "November 29, 2019 10:00:00Z",
+      "fp2": "November 29, 2019 14:00:00Z",
+      "fp3": "November 30, 2019 11:00:00Z",
+      "qualifying": "November 30, 2019 14:00:00Z",
+      "race": "December 1, 2019 14:10:00Z"
     }
   ]
 }
