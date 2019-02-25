@@ -49,6 +49,8 @@ function raceSetup(arr) {
       racePast = true;
     }
 
+    console.log(timeZone);
+
     out +=
       '<div id="' +
       convertToId(racesData[i].round) +
@@ -60,11 +62,11 @@ function raceSetup(arr) {
       racesData[i].round.replace(" ", "_") +
       '.svg"></object></div>' +
       '<div class="race-times">' +
-      createTime(fp1Time, "FP1") +
-      createTime(fp2Time, "FP2") +
-      createTime(fp3Time, "FP3") +
-      createTime(qualiTime, "Q") +
-      createTime(raceTime, "R") +
+      createTime(fp1Time.tz(timeZone), "FP1") +
+      createTime(fp2Time.tz(timeZone), "FP2") +
+      createTime(fp3Time.tz(timeZone), "FP3") +
+      createTime(qualiTime.tz(timeZone), "Q") +
+      createTime(raceTime.tz(timeZone), "R") +
       "</div></div></div>";
   }
   if (nextRace == null) {
@@ -99,13 +101,13 @@ function getTimezone() {
   }
   selectList.value = timeZoneValue;
   selectList.addEventListener("change", restTimeZone);
+
+  return timeZoneValue;
 }
 
 function restTimeZone(e) {
   var newtz = e.target.value;
   setCookie(f1CookieName, newtz, 365);
-
-  console.log(newtz);
 }
 
 function setCookie(name, value, days) {
