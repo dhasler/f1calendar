@@ -21,7 +21,10 @@ function raceSetup(arr) {
   var i;
   for (i = 0; i < racesData.length; i++) {
     var fp1Time = moment(new Date(racesData[i].fp1)).utcOffset(0);
-    console.log(fp1Time);
+    var fp2Time = moment(new Date(racesData[i].fp2)).utcOffset(0);
+    var fp3Time = moment(new Date(racesData[i].fp3)).utcOffset(0);
+    var qualiTime = moment(new Date(racesData[i].qualifying)).utcOffset(0);
+    var raceTime = moment(new Date(racesData[i].race)).utcOffset(0);
 
     out +=
       '<div class="race"><h3>' +
@@ -32,13 +35,29 @@ function raceSetup(arr) {
       racesData[i].round.replace(" ", "_") +
       '.svg"></object></div>' +
       '<div class="race-times">' +
-      "<p>FP1:</p>" +
-      "<p>FP2:</p>" +
-      "<p>FP3:</p>" +
-      "<p>Q:</p>" +
-      "<p>R:</p>" +
-      "</div>" +
-      "</div></div>";
+      createTime(fp1Time, "FP1") +
+      createTime(fp2Time, "FP2") +
+      createTime(fp3Time, "FP3") +
+      createTime(qualiTime, "Q") +
+      createTime(raceTime, "R") +
+      "</div></div></div>";
   }
   document.getElementById("raceArea").innerHTML = out;
+}
+
+function createTime(timeUTC, event) {
+  return (
+    "<p class='time-line' data-time='" +
+    timeUTC +
+    "'><span class='event'>" +
+    event +
+    ":</span> " +
+    "<span class='day'>" +
+    timeUTC.format("MMM DD") +
+    "</span>" +
+    "<span class='time'>" +
+    timeUTC.format("HH:mm") +
+    "</span>" +
+    "</p>"
+  );
 }
