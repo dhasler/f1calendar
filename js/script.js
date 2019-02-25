@@ -20,8 +20,9 @@ function raceSetup(arr) {
   var out = "";
   var i;
   for (i = 0; i < racesData.length; i++) {
-    var fp1Time = new Date(racesData[i].fp1);
+    var fp1Time = moment(new Date(racesData[i].fp1)).utcOffset(0);
     console.log(fp1Time);
+
     out +=
       '<div class="race"><h3>' +
       racesData[i].round +
